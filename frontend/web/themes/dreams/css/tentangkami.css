@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+h1, h2{margin: 0;}
+
+/* backgroud sprite */
+.bgb{background: url(../images/bg/sprite-detail-berita.png) no-repeat 0 0;}
+/* end backgroud sprite */
+.pilihan .news-tiker{
+    padding: 8px 0 0;
+    overflow: hidden;
+}
+.tkicon{background: url(../images/komponen/tentang-kami-icon.gif);}
+.tentangkami{
+    background: url(../images/komponen/tentang-kami.png) top center no-repeat;
+    padding-top: 345px;
+    color: #2c2e2d;
+    text-align: justify;
+}
+.tentangkami h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.tentangkami .keterangan{
+    width: 795px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.tentangkami .keterangan p{margin: 0 0 15px 0;}
+.fitur{padding: 30px 0;}
+.fitur li{
+    display: block;
+    width: 370px;
+    height: 110px;
+    float: left;
+    margin: 15px 35px 15px 0;
+
+}
+.fitur li:nth-child(2n){margin: 15px 0 15px 0;}
+.fitur li .icon{
+    width: 142px;
+    height: 101px;
+    margin: 0 20px 0 0;
+}
+.fitur li .label{
+    width: 205px;
+    height: 101px;
+    line-height: 18px;
+}
+.fitur li .label-l2{
+    width: 205px;
+    height: 101px;
+    display: table-cell;
+    vertical-align: middle;
+}
+.fitur .icon.cariboil{background-position: 0 0;}
+.fitur .icon.berita{background-position: 0 -101px;}
+.fitur .icon.promo{background-position: -142px 0;}
+.fitur .icon.spesifikasi{background-position: -142px -101px;}
+.fitur .icon.daftarharga{background-position: -284px 0;}
+.fitur .icon.direktori{background-position: -284px -100px;}
+.fitur .icon.showroom{background-position: -426px 0;}
+.fitur .icon.cariaksesoris{background-position: -426px -100px;}
+#breadcrumb{
+    padding: 0 7px 10px;
+}
+

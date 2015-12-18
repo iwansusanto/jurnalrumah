@@ -1,0 +1,663 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 17, 2015, 12:01:41 PM
+    Author     : dreasnisa
+*/
+h1, h2{margin: 0;}
+
+/* backgroud sprite */
+.bgb{background: url(../images/bg/sprite-detail-berita.png) no-repeat 0 0;}
+/* end backgroud sprite */
+
+/* begin menu berita */
+.subx{margin: 0 0 17px; position: relative;z-index: 2;}
+.submenu-berita{background: #e7e9e8;}
+.submenu-berita li{
+    display: block;
+    float: left;
+    width: 183px;
+    background: #d1d2d4;
+    position: relative;
+    margin: 0 2px 0 0;
+}
+.submenu-berita li:first-child{width: 77px;}
+.submenu-berita li:first-child a{
+    background: url(../images/komponen/berita-home.png) no-repeat center center;
+    padding: 13px 0 22px;
+}
+.submenu-berita li:last-child{
+    /*    width: 140px;
+        margin: 0;*/
+}
+
+.submenu-berita li:last-child a{
+    padding: 8px 0 6px 50px;
+}
+.submenu-berita li a{
+    display: block;
+    color: #676767;
+    text-align: center;
+    padding: 11px 0 10px;
+    text-transform: uppercase;
+}
+.submenu-berita li.active:after, .submenu-berita li:hover:after{
+    content: ' ';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    background: #ed5b28;
+}
+.submenu-berita li .label{padding: 4px 8px 0 0;}
+.submenu-berita li .label-icon{
+    width: 31px;
+    height: 21px;
+    background: url(../images/bg/berita-ico-video.png) no-repeat;
+}
+.submenu-berita.video li:first-child{
+    width: 77px;
+}
+.submenu-berita.video li:last-child a{
+    padding: 11px 0 10px;
+}
+.submenu-berita.video li{
+    width: 341px;
+}
+.submenu-berita.video li:nth-child(2){
+    width: 80px;
+}
+.submenu-berita.video li:nth-child(2) a{
+    width: 80px;
+    background: url(../images/bg/berita-ico-video.png) no-repeat center center;
+    padding: 13px 0 22px;
+}
+.submenu-berita.video li:last-child{
+    width: 341px;
+}
+/* end menu berita */
+
+/* begin headline berita */
+.headline {}
+.headline h1{margin: 5px 0;font-size: 30px;color: #000;}
+.headline-slider li{
+    position: relative;
+}
+.headline-slider li .iconplay{
+    position: absolute;
+    z-index: 2;
+    top: 145px;
+    left: 300px;
+    width: 93px;
+    height: 92px;
+    background-position: -257px -160px;
+}
+.bx-wrapper {
+    height: 405px;
+}
+.bx-caption {
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 649px;
+    color: #fff;
+    font-size: 21px;
+    padding: 15px;
+    background:#414142;
+    /*betak dari kompas*/
+    /*    background:#000; 
+        background:-moz-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.47) 31%,rgba(0,0,0,.7) 100%);
+        background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,rgba(0,0,0,0)),color-stop(31%,rgba(0,0,0,.47)),color-stop(100%,rgba(0,0,0,.7)));
+        background:-webkit-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.47) 31%,rgba(0,0,0,.7) 100%);
+        background:-o-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.47) 31%,rgba(0,0,0,.7) 100%);
+        background:-ms-linear-gradient(top,rgba(0,0,0,0) 0,rgba(0,0,0,.47) 31%,rgba(0,0,0,.7) 100%);
+        background:linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.47) 31%,rgba(0,0,0,.7) 100%);
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#b3000000', GradientType=0);*/
+}
+.bx-caption a {
+    color: #fff;
+    font-family: "Open Sans",tahoma,sans-serif;
+}
+.bx-penulis {
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    text-align: right;
+    width: 100%;
+    color: #aaa;
+    z-index: 2;
+    font-size: 9px;
+}
+#headline-pager {
+    background: #fff;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 2px solid #E2E3E2;
+    height: 130px;
+    padding: 5px 0 0;
+}
+#headline-pager li {
+    display: block;
+    float: left;
+    border-right: 1px solid #ededed;
+    padding: 0;
+    margin: 0 1px 0 0;
+    width: 133px;
+    height: 130px;
+    position: relative;
+}
+#headline-pager li:last-child {
+    border-right: none;
+    padding: 0;
+    margin: 0;
+}
+#headline-pager li .iconplay{
+    position: absolute;
+    top: 20px;
+    left: 45px;
+    width: 43px;
+    height: 40px;
+    background-position: -350px -160px;
+    z-index: 1;
+}
+#headline-pager a {
+    display: block;
+    padding: 0;
+    position: relative;
+    color: #828282;
+}
+#headline-pager a.active:before, #headline-pager a:hover:before {
+    content: ' ';
+    position: absolute;
+    background: #f1592a;
+    width: 100%;
+    height: 5px;
+    z-index: 1;
+    top: -5px;
+    left: 0;
+}
+#headline-pager span {
+    display: block;
+    padding: 3px 5px 0;
+    font-size: 11px;
+    text-align: center;
+}
+/* end headline berita */
+
+
+/* begin breadcrumb */
+.breadcrumb{padding: 13px 0 0;}
+.breadcrumb li{
+    display: inline-block;
+    color: #767676;
+    margin: 0 7px 0 0;
+}
+.breadcrumb li a{color: #595959;font-weight: bold;}
+/* end breadcrumb */
+
+
+/* begin list berita */
+.berita{
+    background: #fff;
+    border-left: 1px solid #eaeaea;
+    border-right: 1px solid #eaeaea;
+}
+.berita li{
+    display: block;
+    padding: 14px 16px;
+    border-bottom: 1px solid #ededed;
+}
+.berita li a{}
+.berita li:hover h2{color: tomato;}
+.berita li:hover .foto{opacity: 0.7;}
+.berita li h2{
+    font-size: 15px;
+    color: #414141;
+}
+.berita li span.subjudul, .berita li span.summary{display: block;}
+.berita li .foto{
+    width: 90px;
+    height: 75px;
+    background: tomato;
+    margin: 0 15px 0 0;
+}
+.berita li .deskripsi{
+    width: 540px;
+}
+.berita .subjudul{
+    color: #ee5b28;
+    font-size: 11px;
+}
+.berita .summary{
+    color: #58585B;
+    padding: 4px 0;
+}
+.berita .label{
+    color: #8F8E8E;
+    font-size: 11px;
+    margin: 0 10px 0 0;
+}
+.berita .sharer {
+    position: relative;
+}
+.berita .sharer .fb{
+    position: absolute;
+    top: 0;
+}
+.berita .sharer .tw{
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
+.share-btn-wrap {
+    width: 300px;
+}
+.share-btn-wrap > span {
+    cursor: pointer;
+}
+.facebook {
+    content: url(../images/komponen/facebook_share.png);
+    background-repeat: no-repeat;
+    background-size: 80px 16px;
+    position: relative;
+    top: 3px;
+}
+.twitter {
+    content: url(../images/komponen/twitter_share.png);
+    background-repeat: no-repeat;
+    background-size: 80px 16px;
+    position: relative;
+    top: 3px;
+}
+.count_fb, .count_twitter {
+    border: 1px solid #bcbcbc;
+    border-radius: 4px;
+    padding: 1px 3px;
+}
+/* end list berita */
+.slot-iklan{
+    background: #fff;
+    padding: 23px 0;
+    border-bottom: 1px solid #ededed;
+}
+.slot-470-60 {
+    background: tomato;
+    width: 470px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+
+/*
+begin
+showroom premium
+*/
+.showroompremium {
+    width: 300px;
+    height: 250px;
+    position: relative;
+}
+.showroompremium .badge {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-position: -352px -203px;
+    width: 135px;
+    height: 24px;
+    padding: 6px 0 0 25px;
+    font: normal 14px 'Arial';
+}
+.showroompremium .nav {
+    position: absolute;
+    bottom: 23px;
+    left: 5px;
+    width: 290px;
+    height: 10px;
+    z-index: 1;
+}
+.showroompremium .nav a {
+    display: block;
+    width: 16px;
+    height: 25px;
+}
+.showroompremium .nav .showroom-nav {
+    display: block;
+    width: 16px;
+    height: 25px;
+    cursor: pointer;
+    text-indent: 100px;
+    overflow: hidden;
+}
+.showroompremium .nav #showroom-prev {
+    background-position: -20px -121px;
+}
+.showroompremium .nav #showroom-next {
+    background-position: -37px -121px;
+}
+.showroompremium .caption {
+    background: rgba(44, 47, 49, 0.6);
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 0;
+}
+.showroompremium .caption .namashowroom {
+    font-size: 14px;
+}
+.showroompremium .caption .stokshowroom {
+    font-style: italic;
+}
+/*
+end
+showroom premium
+*/
+
+
+/*
+begin
+iklan terkini
+*/
+.iklanterkini .iklanboil li {
+    display: block;
+    border-bottom: 1px solid #dedede;
+    padding: 0 0 8px;
+    margin: 0 10px 10px;
+}
+.iklanterkini .iklanboil li:last-child {
+    border: none;
+}
+.iklanterkini .iklanboil a {
+    color: #444443;
+}
+.iklanterkini .iklanboil .foto {
+    width: 140px;
+    margin: 0 15px 0 0;
+}
+.iklanterkini .iklanboil .detaild {
+    width: 140px;
+}
+.iklanterkini .detaild .judul {
+    font: bold 13px 'Arial';
+    display: block;
+}
+.iklanterkini .detaild .harga {
+    display: block;
+    font: bold 17px 'Arial';
+    color: #f37130;
+}
+/*
+begin
+iklan terkini
+*/
+
+
+/*
+begin
+promo mobil
+*/
+.iklanterkini, .promomobil {
+    border-bottom: 2px solid #2b2f32;
+    margin: 0 0 20px;
+}
+
+.promomobil .promodaftar {
+    padding: 0 10px;
+}
+.promomobil .promodaftar li {
+    display: block;
+}
+.promomobil .promodaftar a {
+    font: bold 14px 'Arial';
+    color: #444443;
+    padding: 0 0 20px;
+    display: block;
+}
+.promomobil li:last-child a {padding: 0 0 8px;}
+/*
+end
+promo mobil
+*/
+
+
+/*
+begin
+detail berita
+*/
+.detail{
+    background: #fff;
+    border-top: 1px solid #d1d2d4;
+    border-left: 1px solid #d1d2d4;
+    border-right: 1px solid #d1d2d4;
+}
+.detail .breadcrumb{
+    padding: 15px 20px 0;
+}
+.detail .judul{
+    border-bottom: 1px solid #eee;
+    padding: 0 20px;
+}
+.detail .judul h1{
+    color: #231F20;
+    font-size: 24px;
+    padding: 13px 0 9px;
+}
+.judul .tanggal{
+    padding:  0 0 5px;
+}
+.judul .tanggal li{
+    display: inline-block;
+    color: #8C8C8C;
+    border-right: 1px solid #8C8C8C;
+    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
+}
+.judul .tanggal li:last-child{
+    border: none;
+}
+
+.sharingtools{padding: 15px 20px;}
+
+.berita-detail-image{
+    width: 680px;
+    height: 410px;
+    overflow: hidden;
+}
+.berita-detail-image li{display: none;}
+.berita-detail-image li.active{display: block;}
+.berita-detail-slider{}
+.berita-detail-slider li{
+    height: 80px;
+    cursor: pointer;
+    overflow: visible;
+    background: #ccc;
+}
+.berita-detail-slider li.active:before, .berita-detail-slider li:hover:before {
+    content: ' ';
+    position: absolute;
+    background: #f1592a;
+    width: 100%;
+    height: 5px;
+    z-index: 1;
+    top: -5px;
+    left: 0;
+}
+.db .bx-wrapper{position: relative;height: 80px;}
+.db .bx-wrapper .bx-controls{
+    position: absolute;
+    top: 32px;
+    z-index: 2;
+    width: 100%;
+}
+.db .bx-controls a{
+    display: block;
+    width: 28px;
+    height: 28px;
+    text-indent: 666px;
+    overflow: hidden;
+}
+.db .bx-controls .bx-prev{position: absolute;left: 0;background: url(../images/bg/berita-detail-slider-prev.png) no-repeat;}
+.db .bx-controls .bx-next{position: absolute;right: 0;background: url(../images/bg/berita-detail-slider-next.png) no-repeat;}
+.db .bx-viewport{
+    padding: 5px 0 0;
+}
+
+.detail .konten-nya{
+    font-size: 13px;
+    color: #58585a;
+    padding: 50px 20px 10px;
+}
+.detail .konten-nya p{
+    color: #58585B;
+    line-height: 19px;
+    margin: 0 0 20px;
+}
+
+
+.detail .tagging{padding: 0 20px;margin: 10px 0;}
+.detail .tagging .label{
+    width: 30px;
+    color: #5f5f61;
+    margin: 0 15px 0 0;
+    font-size: 20px;
+}
+.detail .tagging .listx{
+    width: 580px;
+    padding: 4px 0 0;
+}
+.tagging .listx li{
+    display: inline-block;
+    margin: 0 1px 5px 0;
+}
+.tagging .listx a{
+    display: block;
+    background: #ef5829;
+    color: #fff;
+    padding: 3px 6px;
+}
+.tagging .listx a:hover{background: #3f75bb;}
+
+.komentar{background: #f5f5f5;padding: 16px 20px;}
+.komentar .counter{}
+.komentar .counter .label{
+    color: #5f5f61;
+    margin: 0 15px 0 0;
+    font-size: 20px;
+}
+.komentar .counter .view{
+    background: #fff;
+    border-radius: 4px;
+    padding: 5px 6px 5px 5px;
+    border: 1px solid #bcbcbc;
+    position: relative;
+    margin: 2px 0 0;
+}
+.komentar .counter .view:before{
+    content: ' ';
+    width: 9px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    top: 6px;
+    left: -8px;
+    background: url(../images/bg/berita-arrow-views.png) no-repeat;
+}
+.komentar .counter .togglebutton{
+    display: block;
+    width: 16px;
+    height: 8px;
+    background-position: 0 -20px;
+    margin: 12px 0 0;
+    cursor: pointer;
+}
+.komentar .counter .togglebutton.up{
+    background-position: 0 -28px;
+}
+
+
+.spotlite-content, .spotlite-banner{
+    background: #838384;
+    margin: 20px 0 0;
+    padding: 0;
+}
+.spotlite-content li{
+    display: inline-block;
+    text-align: center;
+    width: 598px;
+    margin: 0;
+}
+.spotlite-content li:first-child{
+    float:left;
+}
+.spotlite-content li:last-child{
+    float:right;
+}
+.spotlite-content li:first-child,.spotlite-content li:last-child{
+    width: 40px;
+    background: #B6B6B7
+}
+.spotlite-content li:first-child:hover,.spotlite-content li:last-child:hover{background: #666;}
+.spotlite-content li a{
+    display: block;
+    color:#fff;
+    padding: 10px 0;
+    font: normal 14px 'Arial';
+}
+.spotlite-content li a:hover{color:#efefef;}
+.spotlite-banner li{
+    display: inline-block;
+    margin: 0;
+}
+.spotlite-banner li a{
+    display: block;
+    color:#fff;
+    padding: 10px 8px;
+    position: relative;
+}
+.spotlite-banner li.active a, .spotlite-banner li:hover{
+    background : #B6B6B7;
+}
+.spotlite-banner li.active a:after, .spotlite-banner li:hover a:after{
+    content: '';
+    position: absolute;
+    border-bottom: 3px solid #ef5a22;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 3px;
+}
+.spotlite-banner li.right a{
+    background: #B6B6B7;
+    padding: 10px 15px;
+    margin: 0 0 0 1px;
+}
+.spotlite-banner li.right:hover a{
+    background: tomato;
+}
+
+/*
+Scrol to top
+*/
+.go-top {
+    position: fixed;
+    bottom: 125px;
+    right: 0px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: -5px 5px rgba(0,0,0,.1);
+    padding: 10px;
+    background-color: #fff;
+    opacity: 0.6;
+    z-index: 1;
+}
+

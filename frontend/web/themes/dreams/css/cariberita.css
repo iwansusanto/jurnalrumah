@@ -1,0 +1,91 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 13, 2015, 11:51:51 PM
+    Author     : _
+*/
+
+
+
+/* List Berita Pencarian */
+.cariberita-label {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding: 10px 20px 0px;
+}
+.empty {
+    padding: 10px 20px 10px;
+    background-color: #ffffff;
+}
+#cariberitalist {
+    /*margin-top: 20px;*/
+}
+.content-berita-lainnya {
+    color: #555;
+}
+.list-berita-lainnya {
+    position: relative;
+    top: -4px;
+}
+ul.wrapper-list-berita {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+li.list-berita-item {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 15px 0px;
+    border-bottom: 1px solid #CCCBC4;
+}
+li.list-berita-item:hover {
+    background-color: #f8f8f8;
+    border-bottom: 5px solid #CCCBC4;
+}
+li.list-berita-item:hover .judul-berita-lainnya {
+    color: #E8B40C;
+}
+li.artikel-empty {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+#loading-bar {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #CCCBC4;
+}
+.judul-berita-lainnya {
+    font-size: 20px;
+    /*color: #016fba;*/
+    /*color: #0C13E8;*/
+    color: #323233;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.wrapper-berita-lainnya-l {
+    width: 480px;
+    padding: 0px 0px 0px 20px;
+}
+.wrapper-berita-lainnya-r {
+    padding: 0px 20px 0px 0px;
+}
+.kategori-berita-lainnya {
+    font-size: 14px;
+    /*color: #E0D117;*/
+    color: #E8B40C;
+}
+.kategori-berita-lainnya:hover, .judul-berita-lainnya:hover {
+    text-decoration: none;
+}
+.berita-lainnya-waktu-tayang {
+    color: #999;
+    padding-top: 5px;
+    font-weight: normal;
+}
+
+/* End List Berita Pencarian */

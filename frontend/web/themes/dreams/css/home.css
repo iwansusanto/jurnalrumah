@@ -1,0 +1,234 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 18, 2015, 2:29:02 PM
+*/
+
+
+/* line 73, ../sass/dr-home.scss */
+.headline {
+  margin: 0 0 0px;
+  width: 650px;
+}
+
+/* line 75, ../sass/dr-home.scss */
+.headline .hlnav {
+  position: relative;
+  top: 150px;
+  z-index: 51;
+}
+/* line 81, ../sass/dr-home.scss */
+.headline .hlnav .navslider {
+  display: block;
+  width: 33px;
+  height: 38px;
+  text-indent: 100px;
+  overflow: hidden;
+}
+/* line 88, ../sass/dr-home.scss */
+.headline .hlnav #prev {
+  position: absolute;
+  left: 0;
+  background-position: 0 -159px;
+}
+/* line 93, ../sass/dr-home.scss */
+.headline .hlnav #next {
+  position: absolute;
+  right: 0;
+  background-position: -34px -159px;
+}
+/* line 99, ../sass/dr-home.scss */
+.headline .hlnav a {
+  display: block;
+  width: 33px;
+  height: 38px;
+}
+
+/* line 108, ../sass/dr-home.scss */
+.bx-wrapper {
+  height: 405px;
+}
+
+/* line 111, ../sass/dr-home.scss */
+.bx-caption {
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  height: 70px;
+  width: 590px;
+  background: linear-gradient(to bottom,rgba(0,0,0,0) 0,rgba(0,0,0,.7) 60%);
+  text-shadow: 0 0 5px #111;
+  color: #fff;
+  font-size: 25px;
+  padding: 15px 30px;
+}
+
+/* line 123, ../sass/dr-home.scss */
+.bx-caption a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+}
+.bx-caption a:hover {
+    text-decoration: underline;
+}
+/* line 125, ../sass/dr-home.scss */
+.bx-penulis {
+  position: absolute;
+  bottom: 15px;
+  right: 30px;
+  text-align: right;
+  width: 100%;
+  color: #aaa;
+  z-index: 2;
+  font-size: 9px;
+}
+
+/* line 135, ../sass/dr-home.scss */
+#bx-pager {
+    border-top: 2px solid #b9201f;
+    height: 115px;
+    margin-top: -2px;
+    padding: 0px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #CCCBC4;
+}
+
+/* line 140, ../sass/dr-home.scss */
+#bx-pager li {
+    display: block;
+    float: left;
+    border-right: 1px solid #CCCBC4;
+    padding: 0;
+    margin: 0;
+    width: 129px;
+    height: 115px;
+    overflow: hidden;
+}
+/* line 149, ../sass/dr-home.scss */
+#bx-pager li:last-child {
+  /*border-right: none;*/
+  width: 129px;
+}
+#bx-pager li:first-child {
+  /*border-right: none;*/
+ border-left: 1px solid #CCCBC4;
+ width: 128px;
+}
+/* line 153, ../sass/dr-home.scss */
+#bx-pager a {
+  display: block;
+  padding: 0px;
+  position: relative;
+  /*color: #016fba;*/
+  color: #0C13E8;
+  text-decoration: none;
+}
+/* line 159, ../sass/dr-home.scss */
+#bx-pager a.active:before, #bx-pager a:hover:before {
+  content: ' ';
+  position: absolute;
+  /*background: #f1592a;*/
+  width: 100%;
+  height: 5px;
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+#bx-pager a.active > span {
+    /*background: #E0D117;*/
+    background: #E8B40C;
+    color: #323233;
+/*    color: #ffffff;*/
+    padding: 5px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -3px;
+}
+
+#bx-pager span {
+  display: block;
+  padding: 5px;
+  overflow: hidden;
+  height: 35px;
+  text-align: center;
+  font-size: 11px;
+  background-color: #ffffff;
+  margin-top: -3px;
+}
+.bx-controls  {
+    border: 1px solid red;
+    margin-top: 40px;
+}
+.empty {
+    padding: 10px 20px 10px;
+    background-color: #ffffff;
+}
+.content-berita-lainnya {
+    color: #555;
+}
+.list-berita-lainnya {
+    position: relative;
+    top: -4px;
+}
+ul.wrapper-list-berita {
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffffff;
+}
+li.list-berita-item {
+    list-style-type: none;
+    cursor: pointer;
+    padding: 15px 0px;
+    border-bottom: 1px solid #CCCBC4;
+}
+li.list-berita-item:hover {
+    background-color: #f8f8f8;
+    border-bottom: 5px solid #CCCBC4;
+}
+li.list-berita-item:hover .judul-berita-lainnya {
+    color: #E8B40C;
+}
+li.artikel-empty {
+    list-style-type: none;
+    text-align: center;
+    padding: 10px;
+}
+#loading-bar {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px;
+    border-bottom: 1px solid #CCCBC4;
+}
+.judul-berita-lainnya {
+    font-size: 20px;
+    /*color: #016fba;*/
+    /*color: #0C13E8;*/
+    color: #323233;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.wrapper-berita-lainnya-l {
+    width: 480px;
+    padding: 0px 0px 0px 20px;
+}
+.wrapper-berita-lainnya-r {
+    padding: 0px 20px 0px 0px;
+}
+.kategori-berita-lainnya {
+    font-size: 14px;
+    /*color: #E0D117;*/
+    color: #E8B40C;
+}
+.kategori-berita-lainnya:hover, .judul-berita-lainnya:hover {
+    text-decoration: none;
+}
+.berita-lainnya-waktu-tayang {
+    color: #999;
+    padding-top: 5px;
+    font-weight: normal;
+}

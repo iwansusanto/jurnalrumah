@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+.karir, tim{
+    color: #666;
+}
+.karir .keterangan{
+    width: 795px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.karir .keterangan p{margin: 0 0 15px 0;}
+.karir .keterangan h2{font-size: 12px;}
+.karir .keterangan li{padding-top: 12px;}
+.karir .keterangan li li{padding-top: 2px;}
+.karir h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.karir .isi{
+    margin-bottom: 10px; 
+    position:relative;
+}
+.karir h1, .tim h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+.header-menu .atas{margin:50px 0 25px 0;}
+.header-menu .atas li{display:inline-block;border-right:1px solid #333;}
+.header-menu .atas li:last-child{border-right:none;}
+.header-menu .atas a{padding:3px 10px 3px 8px;color:#000;}
+.header-menu .atas a.active{padding:3px 10px 3px 8px;color:tomato; font-weight:bold;}
+.header-menu .atas a:hover{color:tomato;}
+.header-title{
+    font-size: 20px;
+    font-family: 'oswaldbook';
+    text-transform: uppercase;  
+}
+.list-tim .atas{margin:0 0 25px 0;}
+.list-tim .atas div.dv{display:block; list-style:none; clear:both; margin-bottom:10px;}
+.list-tim .atas div.dv .divleft{ width:208px; float:left; margin-right:10px; font-weight:bold; margin-bottom:10px;}
+.list-tim .atas div.dv .divdot{ width:10px; float:left; margin-right:10px; margin-bottom:10px;}
+.list-tim .atas div.dv .divright{width: 620px; float:left; margin-bottom:10px;}
+.tim .keterangan{
+    width: 865px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 20px;
+    color: #666;
+}
+.tim .keterangan .img{
+    float:left; margin-right:5px;
+}
+.tim .keterangan .ket{
+    margin-top:4px;
+}

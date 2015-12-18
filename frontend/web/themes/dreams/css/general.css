@@ -1,0 +1,395 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 7, 2015, 2:24:58 PM
+*/
+body {
+    margin: 0px;
+    font-family: "Open Sans",arial,sans-serif;
+    font-size: 13px;
+    color: #323233;
+    background-color: #ebebeb;
+}
+/*a:link {
+    text-decoration: none;
+}*/
+#page {
+    display: block;
+    position: relative;
+}
+#content {
+    position: relative;
+    display: block;
+    left: 7px;
+}
+.header {
+    z-index: 99999;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.95);
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+.header-time {
+    color: #999!important;
+    font-weight: bold;
+}
+.menuheader {
+    width: 1148px;
+}
+.fixed-header {
+    position: fixed;
+    left: 100px;
+    margin-top: 40px;
+    z-index: 1;
+}
+.container-header {
+    /*z-index: 99999;*/
+    position: fixed;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 1150px;
+    left: 8%;
+    top: 0;
+    background-color: #fff;
+}
+.content-left {
+    width: 160px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.content-right {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+ul.list-berita-popular, ul.list-rumah-dijual, ul.list-tag-popular {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+ul.list-berita-popular li, ul.list-rumah-dijual {
+    padding: 0px 0px 15px !important;
+    list-style-type: none;
+}
+.list-rumah-dijual li:hover {
+/*    color: #E0D117;*/
+    color: #E8B40C;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.judul-berita-popular-r {
+    width: 188px;
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #323233;
+}
+.judul-rumah-dijual-l {
+    padding-right: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.judul-berita-popular-r a {
+    text-decoration: none;
+    color: #555555;
+}
+.judul-berita-popular-r a:hover {
+    /*color: #E0D117;*/
+    color: #E8B40C;
+    text-decoration: underline;
+}
+a.link-detail {
+    display: block;
+    overflow: hidden;
+}
+ul.list-berita-popular li:hover {
+    opacity: 0.8;
+}
+ul.list-berita-popular li:hover .judul-berita-popular-r {
+    color: #E8B40C;
+}
+.berita-popular-waktu-tayang {
+    color: #999;
+    padding-top: 5px;
+    font-weight: normal;
+}
+ul.list-tag-popular li {
+    float: left;
+    list-style-type: none;
+    margin: 0px 5px 5px 0px;
+    background-color: #10B150;
+}
+ul.list-tag-popular li a:hover {
+    cursor: pointer;
+    /*opacity: 0.8;*/
+    color: #E8B40C;
+}
+ul.list-tag-popular li a {
+    color: #fff;
+    padding: 3px;
+    display: block;
+    text-decoration: none;
+}
+.tag-wrapper {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.img-berita-popular-r {
+    border: 1px solid #dedede;
+    overflow: hidden;
+    padding: 5px 5px 2px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.img-rumah-dijual-l {
+    border: 1px solid #dedede;
+    background-color: #ffffff;
+    padding: 3px 5px;
+    overflow: hidden;
+}
+.content-center {
+    width: 650px;
+}
+.content-search {
+    width: 830px;
+}
+.header-right-cat, .header-left-cat {
+    font-size: 22px;
+    /*color: #E0D117;*/
+    color: #10B150;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #dedede;
+}
+span.header-right-thin {
+    /*border-bottom: 3px solid #E0D117;*/
+    border-bottom: 3px solid #10B150;
+}
+span.header-right-bold {
+    font-weight: bold;
+    /*color: #b9201f;*/
+    color: #E8B40C;
+}
+.container-header > ul {
+    margin: 0;
+    height: 50px;
+}
+.container-header > ul > li {
+    height: 20px;
+    padding: 15px 25px 16px;
+    list-style: none;
+    float: left;
+    border-right: 1px solid rgba(0,0,0,.1)!important;
+}
+.container {
+    margin: 0px auto;
+    width: 1150px;
+}
+.iklan-header-top {
+    width: 100%;
+    margin: 70px auto 10px;
+    text-align: center;
+    /*border: 1px solid #ddd;*/
+    /*padding-top: 3px;*/
+    left: 7px;
+    position: relative;
+}
+.logo a {
+    display: block;
+    padding: 5px 0;
+    height: 40px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+.cleaner {
+    clear: both;
+}
+
+
+.form-cariberita {
+    position: relative;
+    top: -9px;
+    overflow: hidden;
+}
+input.txt-cariberita {
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #555;
+    width: 390px;
+    outline: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: rgba(255,255,255,.75);
+    border: 1px solid rgba(0,0,0,.25);
+    height: 16px;
+}
+button.btn-cariberita {
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    padding: 9px 25px 8px;
+    border-radius: 2px;
+    color: #fff;
+    /*background-color: #016fba;*/
+    background-color: #10B150;
+}
+
+
+
+/* CSS Menu */
+.menu
+{
+    margin: 10px auto 10px; 
+    width: 100%;
+    float:left;
+    position:relative;
+    z-index:4;
+    /*background: rgb(1, 111, 186);*/
+    background-color: #10B150;
+    /*border: 1px solid rgb(1, 111, 186);*/
+    border: 1px solid #10B150;
+    font-size: 15px;
+    list-style: none;
+    padding: 0;
+    left: 7px;
+}
+
+.menu > li
+{
+    float: left;
+    position: relative;/*delete it if you want submenu to be positioned relative to the whole menu instead of this li element*/
+    color: #EEE;
+    z-index:5;
+    border-right: 1px solid rgba(0,0,0,.1);
+}
+.menu > li > a {
+    padding: 15px 30px;
+}
+.menu li:hover, .menu li.onhover
+{
+    border-top:0;
+}
+.menu a
+{
+    font-weight: bold;
+    display: inline-block;
+    outline: 0;
+    text-decoration: none;
+    color: #FFF;
+    position: relative;
+}
+.menu li.active {
+    background-color: rgba(0,0,0,.15);
+}
+.menu li.active a {
+    color: #E8B40C;
+}
+.menu li:hover a, .menu li.onhover a
+{
+    padding: 15px 30px;
+    background-color: rgba(0,0,0,.15);
+    /*color: #FFF;*/
+    color: #E8B40C;
+    z-index: 9;
+}
+.menu a.arrow
+{
+    background: url(arrow.gif) no-repeat right center;
+}
+        
+.menu .drop
+{
+    position: absolute;
+    z-index:5;
+    left: -9999px;
+    border: 1px solid rgb(1, 111, 186);   
+    background: rgb(1, 111, 186);       
+    text-align: left;
+    padding: 5px 0px 20px; 
+    top:47px;
+    color:#999;
+}
+
+.menu .drop a
+{
+    padding-left: 0px;
+    padding-right: 0px;
+    line-height: 26px;
+    font-weight: bold;
+    display: inline;
+    text-align: left;
+    position: static;
+    z-index: 0;
+}
+
+.menu li:hover .drop, .menu li.onhover .drop
+{
+    border-top: 4px solid rgba(0,0,0,.1);
+    left: -1px;/*Use this property to change offset of the dropdown*/
+}
+.menu li:hover .dropToLeft, .menu li.onhover .dropToLeft
+{
+    left: auto;
+    right: -1px;
+}
+.menu li:hover .dropToLeft2, .menu li.onhover .dropToLeft2
+{
+    left: auto;
+    right: -60px;
+}
+
+.menu li:hover .drop a, .menu li.onhover .drop a
+{
+    background: none;
+    background-image:none;
+    padding:0 10px;
+    border-bottom: none;
+}
+.menu div.drop div a
+{
+    line-height: 20px;  
+	color:white;
+    background:none;
+}
+.menu div.drop div a:hover
+{
+    text-decoration:underline;
+    cursor:pointer;
+    color: #ddd;
+}
+.left > ul {
+    margin: 0px;
+    padding: 12px 9px 10px 20px;
+}
+.left > ul > li {
+    list-style-type: none;
+    padding: 5px;
+}
+
+/* End CSS Menu */
+
+
+/* FOTER CSS */
+.footer {
+    width: 100%;
+    background-color: #fff;
+    background-color: rgba(255,255,255,.95);
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+.wrapper-footer {
+    padding: 20px;
+}
+.footer-head {
+    font-size: 24px;
+    margin-bottom: 5px;
+}

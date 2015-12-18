@@ -1,0 +1,280 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+/* reset */
+.content{
+    font-size: 16px;
+}
+h1{
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+p{
+
+}
+
+ol{
+    display: block;
+    list-style-type: decimal;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+ul{list-style:none;margin:0px;padding:0px;}
+a{text-decoration:none;}
+.clear{clear:both;}
+img{max-width:100%;}
+
+.accordion{
+}
+.smk_accordion{
+    position: relative;
+}
+.smk_accordion .accordion_in{ 
+    position: relative;
+    z-index: 2;
+    margin-top:3px;
+    overflow: hidden;
+}
+.smk_accordion .accordion_in:first-child{
+    margin-top:0;
+}
+/* Head */
+.smk_accordion .accordion_in .acc_head{
+    position: relative;
+    /*background:#2da5da;*/
+    background-color: #f0f0f0;
+    color:#555;
+    padding:15px 20px;
+    font-size: 16px;
+    font-weight:200;
+    display: block;
+    cursor: pointer; 
+    transition:all 0.2s ease-out;
+}
+.smk_accordion .accordion_in .acc_head:hover{
+    background-color: #e9e9e9;
+    transition:all 0.2s ease-out;
+}
+.smk_accordion .accordion_in .acc_head label{
+    float:right
+}
+/* Content */
+.smk_accordion .accordion_in .acc_content{
+    background:#f0f0f0;
+    color: #000;
+}
+.last{
+    border-bottom:1px solid #d5d6d8;
+    padding:15px 20px 15px 0px;
+}
+.acc_content li a{
+    font-size: 14px;
+    display:block;
+    color:#666;
+    font-weight:200;
+    border-top:1px solid #d5d6d8;
+    padding:15px 20px 15px 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.acc_content li a:hover{
+    color:#242424;
+}
+.smk_accordion .accordion_in .acc_head span{
+    float:left;
+}
+.acc_content li a label,.smk_accordion .accordion_in .acc_head label{
+    border:1px solid #ccc;
+    color:#666;
+    font-size:0.8em;
+    float:right;
+    padding: 4px;
+    width: 15px;
+    height: 15px;
+    text-align:center;
+    line-height: 16px;
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -o-border-radius: 1em;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.smk_accordion .accordion_in .acc_head label{
+    border:1px solid #1187BB;
+    color:#FFF;
+}
+.accordion_in.acc_active .acc_head label,.acc_content li a:hover label{
+    background:#ccc;
+    border:1px solid #ccc;
+    color:#FFF;
+}
+.smk_accordion .accordion_in h1:first-of-type,
+.smk_accordion .accordion_in h2:first-of-type,
+.smk_accordion .accordion_in h3:first-of-type,
+.smk_accordion .accordion_in h4:first-of-type,
+.smk_accordion .accordion_in h5:first-of-type,
+.smk_accordion .accordion_in h6:first-of-type
+{
+    margin-top: 5px;
+}
+/* Icon expand */
+.smk_accordion .accordion_in .acc_head .acc_icon_expand{
+    display: block;
+    width: 25px;
+    border-right: 1px solid #f6f6f6;
+    height: 48px;
+    position: absolute;
+    left:5px;
+    top:0;
+    /*background: url(../images/plus.png) no-repeat; */
+    background: url(../images/faq/arrow-oren.png) no-repeat;/*plus.png*/
+    transition:all 0.2s ease-out;
+}
+.smk_accordion .accordion_in.acc_active .acc_head .acc_icon_expand{
+    /*background: url(../images/minus.png) no-repeat; */
+    background: url(../images/faq/arrow-bodas.png) no-repeat;
+    border-right: 1px solid #f07c56;
+    transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);/* Untuk memutar arrow 180 derajat dengan animasi */
+    transition:all 0.2s ease-out;
+}
+
+.smk_accordion .accordion_in.acc_active .acc_content{ 
+    display: block;
+}
+.smk_accordion .accordion_in.acc_active .acc_head{
+    color:#fff;
+    background:#ee5c2d;
+    transition:all 0.2s ease-out;
+}
+.smk_accordion.acc_with_icon .accordion_in .acc_head{
+    padding-left:40px;
+}
+
+/******** SAP Tabs************/
+.sap_tabs {
+    margin-top:20px;
+}
+
+.resp-tabs-list {
+    width: 100%;
+}
+.resp-tab-item:nth-child(3){
+    border-right:none;
+}
+.resp-tab-item {
+    border-right:1px solid #ccc;
+    color: #555;
+    font-size:0.95em;
+    background:#f0f0f0;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    float: left;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.resp-tab-item:hover {
+    background:#ddd;
+    color: #000;
+}
+.resp-tab-active {
+    background:#fff;
+    color:#000;
+}
+.resp-tabs-container {
+    padding:0;
+    background-color:#F0F0F0;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+h2.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+}
+.resp-tab-content {
+    display: none;
+}
+.resp-content-active, .resp-accordion-active {
+    display: block;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+h2.resp-accordion {
+    font-size:1em;
+    font-weight: 100;
+    margin: 0px;
+    padding: 10px 15px;
+    background:#999;
+    margin:10px 0;
+    color:#FFF;
+}
+h2.resp-accordion:hover {
+    background:#ef5e2f;
+    text-shadow: none;
+    color: #FFF;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+@media only screen and (max-width:480px) {
+    .sap_tabs {
+        margin-top:0;
+    }
+    .resp-tabs-container{
+        padding:0px;
+    }
+    ul.resp-tabs-list {
+        display: none;
+    }
+    h2.resp-accordion {
+        display: block;
+    }
+    .resp-vtabs .resp-tab-content {
+        border: 1px solid #C1C1C1;
+    }
+    .resp-tab-content{
+        padding:0;
+        background:#f0f0f0;
+    }
+    .resp-vtabs .resp-tabs-container {
+        border: none;
+        float: none;
+        width: 100%;
+        min-height: initial;
+        clear: none;
+    }
+    .resp-accordion-closed {
+        display: none !important;
+    }
+}

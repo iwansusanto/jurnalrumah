@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 3, 2015, 9:03:09 AM
+    Author     : Teguh
+*/
+
+.content-header{
+    background-color: #E6E6E6;
+    text-align: center;
+    padding: 5px 0;
+    /*padding: 5px;*/
+    border-radius: 5px;
+}
+.form-group-clients{
+    margin: 18px 0;
+    height: 30px;
+}
+
+.input-group{
+    width: 300px;
+}
+
+.form-group-clients label{
+    float: left;
+    width: 240px;
+    margin-right: 30px;
+    text-align: right;
+    padding: 5px 0;
+}
+
+.form-group-clients input{
+    border: 1px solid #E6E6E6;
+    font-size: 12px;
+    /*border-bottom: 1px solid #E6E6E6;*/
+    width: 300px;
+    padding: 5px 3px;
+    border-radius: 3px;
+}
+
+.form-group-clients input[type="checkbox"]{
+    border: 1px solid #E6E6E6;
+    font-size: 12px;
+    /*border-bottom: 1px solid #E6E6E6;*/
+    width: 10px;
+    padding: 5px 3px;
+    border-radius: 3px;
+}
+
+.form-group-clients select{
+    border: 1px solid #E6E6E6;
+    font-size: 12px;
+    width: 310px;
+    height: 30px;
+}
+
+.form-group-clients button{
+    border: 1px solid #ee5a2a;
+    background-color: #ee5a2a;
+    font-size: 12px;
+    color: #FFF;
+    /*border-bottom: 1px solid #E6E6E6;*/
+    width: 300px;
+    padding: 5px 3px;
+    border-radius: 3px;
+}
+
+.right{
+    float: right;
+}
+.left{
+    float: left;
+}
+
+.help-block{
+    font-style: italic;
+    color: red;
+}
+
+div.required label:after {
+    content: " *";
+    color: red;
+}
+
+.alert-success{
+    padding: 15px;
+    border: solid 1px #d6e9c6;
+    background-color: #dff0d8;
+    border-radius: 4px;
+    color: #3c763d;
+}
+
+button.close{
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close{
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
