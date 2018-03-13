@@ -2,6 +2,10 @@ CLONE THIS REPO
 ===============================
 git@github.com:iwansusanto/jurnalrumah.git
 
+TEST PULL FROM RIK
+===============================
+
+
 Yii 2 Advanced Project Template
 ===============================
 
